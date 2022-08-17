@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <div className="search-bar">
             <div className="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
             </div>
             <input type="text" placeholder='search...' />
         </div>
@@ -33,12 +33,40 @@ export default function Navbar() {
         <div className="section-divider"></div>
 
         <div className="mid-section">
-            <div className="menu-item-one">
-              <div className="menu-item-one-icon">
-                <i className="fa-solid fa-warehouse"></i>
-              </div>
-              <div className="menu-item-one-name"></div>
-            </div>
+            <ul>
+              <li>
+                <a className='menu-item'>
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-table-columns"></i>
+                  </div>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a className='menu-item'>
+                  <div className="menu-icon">
+                      <i className="fa-solid fa-table-columns"></i>
+                  </div>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a className='menu-item'>
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-table-columns"></i>
+                  </div>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a className='menu-item'>
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-table-columns"></i>
+                  </div>
+                  Dashboard
+                </a>
+              </li>
+            </ul>
         </div>
     </div>
   )
