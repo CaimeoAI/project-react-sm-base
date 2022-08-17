@@ -1,12 +1,10 @@
-import Navbar from './components/bootstrap-navbar02/Navbar';
-import WeatherAPI from './components/api-weather/WeatherAPI';
+import Navbar from './components/sidebar01/Navbar';
 import './app.scss'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <WeatherAPI/>
     </div>
   );
 }
