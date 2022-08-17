@@ -26,6 +26,8 @@ i:hover,
 }
 
 .navbar {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 20rem;
     height: 100%;
@@ -90,6 +92,7 @@ i:hover,
         position: relative;
 
         .search-icon {
+            margin-top: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -161,6 +164,33 @@ i:hover,
             }
         }
     }
+
+    .bot-section {
+        margin-top: auto;
+        position: relative;
+
+        .menu-item {
+            text-decoration: none;
+            max-height: 2.2rem;
+            font-size: 1.6rem;
+            display: block;
+            overflow: hidden;
+
+            .menu-icon {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            .menu-item-name {
+                display: inline-block;
+                opacity: 100%;
+                transition: opacity 1s ease-in-out, color 0.3s ease-in-out;
+            }
+        }
+    }
 }
 
 .navbar.collapse {
@@ -205,6 +235,17 @@ i:hover,
                         transition: opacity 1s ease-in-out;
                     }
                 }
+            }
+        }
+    }
+
+    .bot-section {
+
+        .menu-item {
+
+            .menu-item-name {
+                opacity: 0%;
+                transition: opacity 1s ease-in-out;
             }
         }
     }

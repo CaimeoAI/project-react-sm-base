@@ -68,6 +68,15 @@ export default function Navbar() {
               </li>
             </ul>
         </div>
+
+        <div className="bot-section">
+          <a className="menu-item">
+            <div className="menu-icon">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <div className="menu-item-name">Settings</div>
+          </a>
+        </div>
     </div>
   )
 }
