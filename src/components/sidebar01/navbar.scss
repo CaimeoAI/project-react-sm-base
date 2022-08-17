@@ -123,12 +123,14 @@
 
             li {
                 list-style-type: none;
-                margin: 0.7rem 0;
+                margin: 1rem 0;
 
                 .menu-item {
                     text-decoration: none;
+                    max-height: 2rem;
                     font-size: 1.6rem;
                     display: block;
+                    overflow: hidden;
 
                     .menu-icon {
                         display: inline-block;
@@ -136,6 +138,12 @@
                         width: 40px;
                         line-height: 40px;
                         text-align: center;
+                    }
+
+                    .menu-name {
+                        display: inline-block;
+                        opacity: 100%;
+                        transition: opacity 1s ease-in-out;
                     }
                 }
             }
@@ -172,4 +180,20 @@
         }
     }
 
+    .mid-section {
+
+        ul {
+
+            li {
+
+                .menu-item {
+
+                    .menu-name {
+                        opacity: 0%;
+                        transition: opacity 1s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
 }
