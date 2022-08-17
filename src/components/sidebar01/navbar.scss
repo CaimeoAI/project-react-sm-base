@@ -18,6 +18,13 @@
     }
 }
 
+i:hover,
+.menu-item-name:hover {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+}
+
 .navbar {
     position: fixed;
     width: 20rem;
@@ -25,7 +32,7 @@
     background-color: #0f0f0f;
     color: whitesmoke;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding: 30px 20px;
+    padding: 20px 12px;
     transition: width 1s ease-in-out;
 
     .brand {
@@ -94,6 +101,11 @@
             border: 0;
             font-size: 1.6rem;
             color: #666;
+
+            :hover {
+                color: whitesmoke;
+                transition: color 0.3s ease-in-out;
+            }
         }
 
         input[type=text] {
@@ -140,10 +152,10 @@
                         text-align: center;
                     }
 
-                    .menu-name {
+                    .menu-item-name {
                         display: inline-block;
                         opacity: 100%;
-                        transition: opacity 1s ease-in-out;
+                        transition: opacity 1s ease-in-out, color 0.3s ease-in-out;
                     }
                 }
             }
@@ -152,7 +164,7 @@
 }
 
 .navbar.collapse {
-    width: 5rem;
+    width: 4rem;
     transition: width 1s ease-in-out;
 
     .brand {
@@ -188,7 +200,7 @@
 
                 .menu-item {
 
-                    .menu-name {
+                    .menu-item-name {
                         opacity: 0%;
                         transition: opacity 1s ease-in-out;
                     }
@@ -197,3 +209,4 @@
         }
     }
 }
+

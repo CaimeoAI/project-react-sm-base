@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <div className="search-bar">
             <div className="search-icon">
-                <i className="fa-solid fa-magnifying-glass"></i>
+                <i onClick={toggleSidebar} className="fa-solid fa-magnifying-glass"></i>
             </div>
             <input type="text" placeholder='search...' />
         </div>
@@ -39,7 +39,7 @@ export default function Navbar() {
                   <div className="menu-icon">
                     <i className="fa-regular fa-compass"></i>
                   </div>
-                  <div className="menu-name">Dashboard</div>
+                  <div className="menu-item-name">Dashboard</div>
                 </a>
               </li>
               <li>
@@ -47,7 +47,7 @@ export default function Navbar() {
                   <div className="menu-icon">
                     <i className="fa-solid fa-cubes"></i>
                   </div>
-                  <div className="menu-name">Content</div>
+                  <div className="menu-item-name">Content</div>
                 </a>
               </li>
               <li>
@@ -55,7 +55,7 @@ export default function Navbar() {
                   <div className="menu-icon">
                     <i className="fa-solid fa-earth-europe"></i>
                   </div>
-                  <div className="menu-name">World News</div>
+                  <div className="menu-item-name">World News</div>
                 </a>
               </li>
               <li>
@@ -63,7 +63,7 @@ export default function Navbar() {
                   <div className="menu-icon">
                     <i className="fa-solid fa-envelope-open-text"></i>
                   </div>
-                  <div className="menu-name">Contact</div>
+                  <div className="menu-item-name">Contact</div>
                 </a>
               </li>
             </ul>
