@@ -1,0 +1,48 @@
+.navbar {
+    position: fixed;
+    width: 20rem;
+    height: 100%;
+    background-color: #0f0f0f;
+    color: whitesmoke;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 30px 20px;
+
+    .brand {
+        width: 80%;
+        font-size: 1.4rem;
+        height: 2rem;
+        overflow: hidden;
+    }
+
+    .collapse-btn {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+        i {
+            font-size: 1.5rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .search-bar {
+
+        input[tpye=text] {
+            margin: 20px 0;
+            border: 0;
+            outline: none;
+            height: 2.5rem;
+            width: 100%;
+            background-color: #333;
+            border-radius: 5px;
+            display: block;
+        }
+    }
+}
