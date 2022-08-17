@@ -37,7 +37,7 @@ export default function Navbar() {
               <li>
                 <a className='menu-item'>
                   <div className="menu-icon">
-                    <i className="fa-solid fa-table-columns"></i>
+                    <i className="fa-regular fa-compass"></i>
                   </div>
                   Dashboard
                 </a>
@@ -45,25 +45,25 @@ export default function Navbar() {
               <li>
                 <a className='menu-item'>
                   <div className="menu-icon">
-                      <i className="fa-solid fa-table-columns"></i>
+                    <i className="fa-solid fa-cubes"></i>
                   </div>
-                  Dashboard
+                  Content
                 </a>
               </li>
               <li>
                 <a className='menu-item'>
                   <div className="menu-icon">
-                    <i className="fa-solid fa-table-columns"></i>
+                    <i className="fa-solid fa-earth-europe"></i>
                   </div>
-                  Dashboard
+                  World News
                 </a>
               </li>
               <li>
                 <a className='menu-item'>
                   <div className="menu-icon">
-                    <i className="fa-solid fa-table-columns"></i>
+                    <i className="fa-solid fa-envelope-open-text"></i>
                   </div>
-                  Dashboard
+                  Contact
                 </a>
               </li>
             </ul>
