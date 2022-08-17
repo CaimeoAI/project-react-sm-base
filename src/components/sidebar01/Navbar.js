@@ -9,6 +9,9 @@ export default function Navbar() {
         </div>
 
         <div className="search-bar">
+            <div className="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <input type="text" placeholder='search...' />
         </div>
     </div>

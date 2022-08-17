@@ -33,10 +33,26 @@
     }
 
     .search-bar {
+        position: relative;
 
-        input[tpye=text] {
+        .search-icon {
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            background: transparent;
+            text-align: center;
+            border: 0;
+            font-size: 1.6rem;
+            color: #666;
+        }
+
+        input[type=text] {
+            padding: 0 40px;
             margin: 20px 0;
             border: 0;
+            font-size: 1.2rem;
             outline: none;
             height: 2.5rem;
             width: 100%;
