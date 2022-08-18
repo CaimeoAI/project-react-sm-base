@@ -1,7 +1,6 @@
 import './navbar.scss'
 import React, { useState } from 'react'
 
-
 export default function Navbar() {
 
   const [toggle, setToggle] = useState('collapse')

@@ -1,4 +1,4 @@
 export const iex = {
-    token: 'pk_44fc2c868596483db32c0710951119e8',
+    token: 'pk_33e5f6377fc34110bf27392fd04f05e9',
     url: 'https://cloud.iexapis.com/v1/'
 }

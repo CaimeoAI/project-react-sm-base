@@ -1,23 +1,11 @@
 import { useState } from 'react'
 import './stocktracker.scss'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
 import StockRow from './sub-components/StockRow'
 
 export default function StockTracker() {
 
-  const [tickerArray, setTickerArray] = useState([
-    { symbol: 'aapl',
-      key: Math.ceil(Math.random()*1000000)},
-
-    { symbol: 'amzn',
-      key: Math.ceil(Math.random()*1000000)},
-
-    { symbol: 'tsla',
-      key: Math.ceil(Math.random()*1000000)},
-
-    { symbol: 'goog',
-      key: Math.ceil(Math.random()*1000000)}])
+  const [tickerArray, setTickerArray] = useState([])
 
   const addTicker = (e) => {
     if (e.key === 'Enter') {
@@ -32,7 +20,15 @@ export default function StockTracker() {
     <div> 
         <div className="container">
             <h1 className='m-5'>Previous Day Closing Prices</h1>
-            <input type="text" onKeyPress={addTicker}/>
+            <div className="container">
+              <input type="text" onKeyPress={addTicker} placeholder='Enter stock symbol...'/>
+              <datalist id='datalist'>
+                <option value="aapl">Apple</option>
+                <option value="aapl">Amazon</option>
+                <option value="aapl">Google</option>
+                <option value="aapl">Tesla</option>
+              </datalist>
+            </div>
             <table className="table mt-5">
               <thead>
                 <tr>
