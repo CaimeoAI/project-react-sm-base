@@ -26,6 +26,7 @@ export default function StockTracker() {
                   <th>Price</th>
                   <th>Date</th>
                   <th>Volume</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
