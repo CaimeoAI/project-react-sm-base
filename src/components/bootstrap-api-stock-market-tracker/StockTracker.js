@@ -6,14 +6,28 @@ import StockRow from './sub-components/StockRow'
 
 export default function StockTracker() {
 
-  const [tickerArray, setTickerArray] = useState(['aapl', 'goog', 'tsla', 'amzn'])
+  const [tickerArray, setTickerArray] = useState([
+    { symbol: 'aapl',
+      key: Math.ceil(Math.random()*1000000)},
+
+    { symbol: 'amzn',
+      key: Math.ceil(Math.random()*1000000)},
+
+    { symbol: 'tsla',
+      key: Math.ceil(Math.random()*1000000)},
+
+    { symbol: 'goog',
+      key: Math.ceil(Math.random()*1000000)}])
 
   const addTicker = (e) => {
     if (e.key === 'Enter') {
-      setTickerArray([...tickerArray, e.target.value])
+      let newArray = ([...tickerArray, { symbol:e.target.value , key: Math.ceil(Math.random()*1000000)}])
+      setTickerArray(newArray)
     }
   }
 
+  const removeTicker = (key) => setTickerArray(tickerArray.filter(item => item.symbol !== key))
+  
   return (
     <div> 
         <div className="container">
@@ -30,7 +44,7 @@ export default function StockTracker() {
                 </tr>
               </thead>
               <tbody>
-                {tickerArray.map((e,i) => <StockRow key={i+Math.ceil(Math.random()*1000000)} ticker={e}/>)}
+                {tickerArray.map((e) => <StockRow key={e.key} ticker={e.symbol} removeTicker={removeTicker} tickerArray={tickerArray}/>)}
               </tbody>
             </table>
         </div>
