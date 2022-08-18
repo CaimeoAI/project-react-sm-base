@@ -1,5 +1,6 @@
 import './navbar.scss'
-import { useState } from 'react'
+import React, { useState } from 'react'
+
 
 export default function Navbar() {
 
@@ -17,10 +18,10 @@ export default function Navbar() {
     <div className={'navbar ' + toggle}>
         <div className="top-section">
             <div className="brand">
-                <div className={'logo ' + toggle}><i class="fa-brands fa-artstation"></i></div>
+                <div className={'logo ' + toggle}><i className="fa-brands fa-artstation"></i></div>
                 <div className="brand-name">Brand</div>
               </div>
-            <div className="collapse-btn">{toggle === 'collapse' ? <i onClick={toggleSidebar} class="fa-solid fa-circle-chevron-right"></i> : <i onClick={toggleSidebar} class="fa-solid fa-circle-chevron-left"></i>}</div>
+            <div className="collapse-btn">{toggle === 'collapse' ? <i onClick={toggleSidebar} className="fa-solid fa-circle-chevron-right"></i> : <i onClick={toggleSidebar} class="fa-solid fa-circle-chevron-left"></i>}</div>
         </div>
 
         <div className="search-bar">
@@ -72,7 +73,7 @@ export default function Navbar() {
         <div className="bot-section">
           <a className="menu-item">
             <div className="menu-icon">
-              <i class="fa-solid fa-gear"></i>
+              <i className="fa-solid fa-gear"></i>
             </div>
             <div className="menu-item-name">Settings</div>
           </a>
