@@ -6,20 +6,19 @@ import StockRow from './sub-components/StockRow'
 
 export default function StockTracker() {
 
-  const tickerArray = ['aapl', 'goog', 'tsla', 'amzn']
+  const [tickerArray, setTickerArray] = useState(['aapl', 'goog', 'tsla', 'amzn'])
 
   const addTicker = (e) => {
-    if (e.target.key === 'Enter') {
-      
+    if (e.key === 'Enter') {
+      setTickerArray([...tickerArray, e.target.value])
     }
   }
-
 
   return (
     <div> 
         <div className="container">
             <h1 className='m-5'>Previous Day Closing Prices</h1>
-            <input type="text" onKeyPress=''/>
+            <input type="text" onKeyPress={addTicker}/>
             <table className="table mt-5">
               <thead>
                 <tr>
@@ -30,8 +29,7 @@ export default function StockTracker() {
                 </tr>
               </thead>
               <tbody>
-                {tickerArray.map((e,i) => <StockRow key={i} ticker={e}/>)}
-                
+                {tickerArray.map((e,i) => <StockRow key={i+Math.ceil(Math.random()*1000000)} ticker={e}/>)}
               </tbody>
             </table>
         </div>

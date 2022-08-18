@@ -11,7 +11,6 @@ export default function StockRow(props) {
 
         fetch(url).then((res) => res.json()).then((data) => {
             setState(data)
-            console.log(state)
         })
     },[]) 
         
